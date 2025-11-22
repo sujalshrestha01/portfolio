@@ -7,7 +7,7 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors());
 
 // Initialize Resend with API Key
 const resend = new Resend(process.env.RESEND_API_KEY);
