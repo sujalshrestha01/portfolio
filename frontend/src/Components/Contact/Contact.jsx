@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faInstagram} from '@fortawesome/free-brands-svg-icons'
-import {faFacebook} from '@fortawesome/free-brands-svg-icons'
-import {faLinkedin} from '@fortawesome/free-brands-svg-icons'
-import {faGithub} from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -21,12 +21,11 @@ const Contact = () => {
     });
 
     const data = await res.json();
-  
 
     if (data.success) alert("Message sent successfully!");
     else alert("Failed to send message");
 
-    setForm({name:'',email:"",message:''})
+    setForm({ name: "", email: "", message: "" });
   };
 
   return (
@@ -36,15 +35,40 @@ const Contact = () => {
         <div className="sm:basis-[50%]   justify-center items-center flex flex-col  ">
           <h3 className="text-4xl">Let's talk</h3>
           <div className="flex gap-3 mt-5">
-
-          <a href="https://www.instagram.com/sujal.sht/" className="  "> <FontAwesomeIcon  icon={faInstagram} className="text-3xl  text-gray-300 hover:text-pink-700" /></a>
-          <a href="https://www.facebook.com/sujal.shrestha.790693"> <FontAwesomeIcon icon={faFacebook} className="text-3xl  text-gray-300 hover:text-blue-700" /></a>
-          <a href="https://www.linkedin.com/in/sujal-shrestha-248631301/"> <FontAwesomeIcon icon={faLinkedin} className="text-3xl  text-gray-300 hover:text-blue-700" /></a>
-          <a href="https://github.com/sujalshrestha01"> <FontAwesomeIcon icon={faGithub} className="text-3xl  text-gray-300 hover:text-gray-600" /></a>
+            <a href="https://www.facebook.com/sujal.shrestha.790693">
+              {" "}
+              <FontAwesomeIcon
+                icon={faFacebook}
+                className="text-3xl  text-gray-300 hover:text-blue-500"
+              />
+            </a>
+            <a href="https://www.instagram.com/sujal.sht/" className="  ">
+              {" "}
+              <FontAwesomeIcon
+                icon={faInstagram}
+                className="text-3xl  text-gray-300 hover:text-pink-700"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/sujal-shrestha-248631301/">
+              {" "}
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                className="text-3xl  text-gray-300 hover:text-blue-500"
+              />
+            </a>
+            <a href="https://github.com/sujalshrestha01">
+              {" "}
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="text-3xl  text-gray-300 hover:text-gray-500"
+              />
+            </a>
           </div>
-         
         </div>
-        <form onSubmit={onSubmit} className="flex flex-col w-full px-10 sm:px-2 sm:basis-[50%]  gap-3">
+        <form
+          onSubmit={onSubmit}
+          className="flex flex-col w-full px-10 sm:px-2 sm:basis-[50%]  gap-3"
+        >
           <label htmlFor="name">
             Your name <br />
             <input
@@ -91,10 +115,8 @@ const Contact = () => {
           {/* <button type="submit" className="border border-white px-4 py-2 text-xl w-fit rounded-2xl hover:bg-gray-400 hover:text-black cursor-pointer ">Submit</button> */}
         </form>
       </div>
-      
     </div>
   );
 };
 
 export default Contact;
-
