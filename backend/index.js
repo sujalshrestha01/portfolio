@@ -35,6 +35,6 @@ app.post("/api/contact", async (req, res) => {
     res.status(500).json({ success: false, error: error.message });
   }
 });
-
+const port=process.env.PORT || 4000
 // Start server
-app.listen(5000, () => console.log("Backend running at http://localhost:5000"));
+app.listen(port, () => console.log(`Backend running at http://localhost:${port}`));
