@@ -1,5 +1,5 @@
 
-import diceGame from './assets/projects/diceGame.jpg'
+import diceGame from './assets/projects/dicegame.jpg'
 import ecommerce from './assets/projects/ecommerce.jpg'
 import expense from './assets/projects/expense.jpg'
 import reduxTodo from './assets/projects/reduxTodo.jpg'
