@@ -29,7 +29,7 @@ const Contact = () => {
   };
 
   return (
-    <div className=" mt-20 " id="contact">
+    <div className="mt-20 pb-10  " id="contact">
       <h2 className="text-4xl text-center mb-10 font-bold">Get in touch</h2>
       <div className="flex items-center flex-col-reverse sm:flex-row">
         <div className="sm:basis-[50%]   justify-center items-center flex flex-col  ">
