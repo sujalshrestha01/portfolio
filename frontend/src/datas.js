@@ -1,54 +1,53 @@
-import profileBlur from './assets/profileBlur.jpg'
+
+import diceGame from './assets/projects/diceGame.jpg'
+import ecommerce from './assets/projects/ecommerce.jpg'
+import expense from './assets/projects/expense.jpg'
+import reduxTodo from './assets/projects/reduxTodo.jpg'
+import shoeConpany from './assets/projects/shoeCompany.jpg'
 
 
 export const datas=[
     {
         id:1,
         title:'Ecommerce Store',
-        liveLink:'',
-        githubLink:'',
+        liveLink:'https://sujalshrestha01.github.io/Ecommerce-Reactjs/',
+        githubLink:'https://sujalshrestha01.github.io/Ecommerce-Reactjs/',
+    
         info:'React',
-        img:profileBlur
+        img:ecommerce
     },
     {
         id:2,
-        title:'Ecommerce Store',
-        liveLink:'',
+        title:'Expense Tracker',
+        liveLink:'https://sujalshrestha01.github.io/expense-tracker/',
         githubLink:'',
         info:'React',
-        img:profileBlur
+        img:expense
     },
     {
         id:3,
-        title:'Ecommerce Store',
-        liveLink:'',
+        title:'Todo',
+        liveLink:'https://sujalshrestha01.github.io/todo-redux-toolkit/',
         githubLink:'',
         info:'React',
-        img:profileBlur
+        img:reduxTodo
     },
 
     {
         id:4,
-        title:'Ecommerce Store',
-        liveLink:'',
+        title:'Dice Game',
+        liveLink:'https://sujalshrestha01.github.io/dice-game/',
         githubLink:'',
         info:'React',
-        img:profileBlur
+        img:diceGame
     },
+   
     {
         id:5,
-        title:'Ecommerce Store',
-        liveLink:'',
+        title:'Shoe company',
+        liveLink:'https://sujalshrestha01.github.io/theShoeCompany-tailwind/',
         githubLink:'',
         info:'React',
-        img:profileBlur
-    },
-    {
-        id:6,
-        title:'Ecommerce Store',
-        liveLink:'',
-        githubLink:'',
-        info:'React',
-        img:profileBlur
+        img:shoeConpany
     },
 ]

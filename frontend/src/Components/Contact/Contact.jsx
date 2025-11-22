@@ -30,21 +30,21 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-screen">
+    <div className=" mt-20 " id="contact">
       <h2 className="text-4xl text-center mb-10 font-bold">Get in touch</h2>
-      <div className="flex ">
-        <div className="basis-[50%] ">
+      <div className="flex items-center flex-col-reverse sm:flex-row">
+        <div className="sm:basis-[50%]   justify-center items-center flex flex-col  ">
           <h3 className="text-4xl">Let's talk</h3>
-          <div className="flex gap-3">
+          <div className="flex gap-3 mt-5">
 
-          <a href="https://www.instagram.com/sujal.sht/" className="w-[30px] border border-white"> <FontAwesomeIcon  icon={faInstagram} /></a>
-          <a href="https://www.facebook.com/sujal.shrestha.790693"> <FontAwesomeIcon icon={faFacebook} /></a>
-          <a href="https://www.linkedin.com/in/sujal-shrestha-248631301/"> <FontAwesomeIcon icon={faLinkedin} /></a>
-          <a href="https://github.com/sujalshrestha01"> <FontAwesomeIcon icon={faGithub} /></a>
+          <a href="https://www.instagram.com/sujal.sht/" className="  "> <FontAwesomeIcon  icon={faInstagram} className="text-3xl  text-gray-300 hover:text-pink-700" /></a>
+          <a href="https://www.facebook.com/sujal.shrestha.790693"> <FontAwesomeIcon icon={faFacebook} className="text-3xl  text-gray-300 hover:text-blue-700" /></a>
+          <a href="https://www.linkedin.com/in/sujal-shrestha-248631301/"> <FontAwesomeIcon icon={faLinkedin} className="text-3xl  text-gray-300 hover:text-blue-700" /></a>
+          <a href="https://github.com/sujalshrestha01"> <FontAwesomeIcon icon={faGithub} className="text-3xl  text-gray-300 hover:text-gray-600" /></a>
           </div>
          
         </div>
-        <form onSubmit={onSubmit} className="flex flex-col basis-[50%]  gap-3">
+        <form onSubmit={onSubmit} className="flex flex-col w-full px-10 sm:px-2 sm:basis-[50%]  gap-3">
           <label htmlFor="name">
             Your name <br />
             <input
@@ -86,7 +86,7 @@ const Contact = () => {
           <input
             type="submit"
             value="submit"
-            className="border border-white px-4 py-2 text-xl w-fit rounded-2xl hover:bg-gray-400 hover:text-black cursor-pointer "
+            className="border border-white px-2 py-1 sm:px-4 sm:py-2 text-[14px] sm:text-xl w-fit rounded-xl sm:rounded-2xl hover:bg-gray-400 hover:text-black cursor-pointer "
           />
           {/* <button type="submit" className="border border-white px-4 py-2 text-xl w-fit rounded-2xl hover:bg-gray-400 hover:text-black cursor-pointer ">Submit</button> */}
         </form>
@@ -97,3 +97,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
