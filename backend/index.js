@@ -7,7 +7,7 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({origin:"*"}));
 
 // Initialize Resend with API Key
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -19,7 +19,7 @@ app.post("/api/contact", async (req, res) => {
   try {
     await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: "sujal8696@gmail.com",
+      to: process.env.TO_EMAIL,
       subject: `New message from ${name}`,
       html: `
         <h2>New Contact Form Submission</h2>
