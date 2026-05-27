@@ -1,20 +1,21 @@
 
 import diceGame from './assets/projects/dicegame.jpg'
-import ecommerce from './assets/projects/ecommerce.jpg'
+import ecommerce from './assets/projects/ecommerce.png'
 import expense from './assets/projects/expense.jpg'
 import reduxTodo from './assets/projects/reduxTodo.jpg'
 import shoeConpany from './assets/projects/shoeCompany.jpg'
+import transx from './assets/projects/transx.png'
 
 
 export const datas=[
     {
         id:1,
-        title:'Ecommerce Store',
-        liveLink:'https://sujalshrestha01.github.io/Ecommerce-Reactjs/',
-        githubLink:'https://sujalshrestha01.github.io/Ecommerce-Reactjs/',
-    
+          title:'transX',
+        liveLink:'https://transx-gamma.vercel.app/',
+        githubLink:'',
         info:'React',
-        img:ecommerce
+        img:transx
+        
     },
     {
         id:2,
@@ -26,11 +27,12 @@ export const datas=[
     },
     {
         id:3,
-        title:'Todo',
-        liveLink:'https://sujalshrestha01.github.io/todo-redux-toolkit/',
-        githubLink:'',
+       title:'Ecommerce Store',
+        liveLink:'https://ecommerce-nine-tau-68.vercel.app/',
+        githubLink:'https://sujalshrestha01.github.io/Ecommerce-Reactjs/',
+    
         info:'React',
-        img:reduxTodo
+        img:ecommerce
     },
 
     {

@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center justify-self-center px-5 fixed max-w-7xl w-full   h-10 top-0 bg-gray-500 rounded-xl">
+    <div className="flex justify-between items-center justify-self-center px-5 fixed max-w-7xl w-full   h-10 top-0 bg-gray-700 rounded-xl">
       <h3>Sujal</h3>
       <div className="sm:hidden cursor-pointer">
         <FontAwesomeIcon onClick={handleMenu} icon={faBars} />

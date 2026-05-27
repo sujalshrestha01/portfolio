@@ -31,7 +31,7 @@ const Projects = () => {
               {" "}
               <img
                 src={data.img}
-                className="h-[200px] w-[200px] lg:h-[250px] lg:w-[250px] "
+                className="h-[200px] w-[300px] lg:h-[250px] lg:w-[300px] "
                 alt=""
               />{" "}
             </a>
